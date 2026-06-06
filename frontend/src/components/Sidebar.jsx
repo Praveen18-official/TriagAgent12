@@ -7,7 +7,7 @@ const Sidebar = () => {
   const isDemo = userType === 'demo';
 
   const menuItems = [
-    { name: 'Landing Page', path: '/', icon: <FiHome className="w-4.5 h-4.5" /> },
+    // Landing page removed from hamburger menu
     { name: 'Dashboard', path: '/dashboard', icon: <FiGrid className="w-4.5 h-4.5" /> },
     { name: 'Upload Tickets', path: '/upload', icon: <FiUpload className="w-4.5 h-4.5" /> },
     { name: 'AI Results', path: '/results', icon: <FiList className="w-4.5 h-4.5" /> },
@@ -17,29 +17,29 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className="w-64 bg-slate-50 text-slate-700 flex flex-col h-screen fixed left-0 top-0 border-r border-slate-200 z-20">
+    <aside className="w-64 bg-slate-900 text-slate-200 flex flex-col h-screen fixed left-0 top-0 border-r border-slate-800 z-20 animate-fade-in">
 
       {/* Brand Logo Link to Landing page */}
-      <Link to="/" className="p-6 border-b border-slate-200/80 flex items-center space-x-3 bg-white hover:bg-slate-50 transition-colors">
+      <Link to="/" className="p-6 border-b border-slate-800/60 flex items-center space-x-3 bg-transparent hover:bg-slate-800/60 transition-colors">
         <div className="bg-blue-600 p-2.5 rounded-xl text-white shadow-sm flex items-center justify-center">
           <FiCpu className="w-5 h-5 text-white animate-pulse" />
         </div>
         <div className="text-left">
-          <h1 className="font-extrabold text-sm text-slate-900 leading-none tracking-tight">TriageAgent</h1>
-          <span className="text-[9px] font-bold text-blue-600 tracking-wider">VERSION 1.0</span>
+          <h1 className="font-extrabold text-sm text-slate-100 leading-none tracking-tight">TriageAgent</h1>
+          <span className="text-[9px] font-bold text-blue-300 tracking-wider">VERSION 1.0</span>
         </div>
       </Link>
 
       {/* Navigation Links */}
-      <nav className="flex-1 px-4 py-6 space-y-1 overflow-y-auto">
+      <nav className="flex-1 px-4 py-6 space-y-1 overflow-y-auto scrollbar-thin">
         {menuItems.map((item) => (
           <NavLink
             key={item.name}
             to={item.path}
             className={({ isActive }) =>
               `flex items-center space-x-3 px-4 py-2.5 rounded-xl transition-all duration-150 group text-xs font-semibold ${isActive
-                ? 'bg-white text-slate-900 border border-slate-200/80 shadow-sm'
-                : 'text-slate-550 hover:bg-slate-200/50 hover:text-slate-900'
+                ? 'bg-slate-800 text-slate-100 border border-slate-700/60 shadow-sm'
+                : 'text-slate-300 hover:bg-slate-800/60 hover:text-slate-100'
               }`
             }
           >
@@ -52,10 +52,10 @@ const Sidebar = () => {
       </nav>
 
       {/* Workspace Session info */}
-      <div className="p-4 mx-4 my-6 bg-white border border-slate-250/60 rounded-2xl flex flex-col items-center text-center shadow-sm">
+      <div className="p-4 mx-4 my-6 card-dark rounded-2xl flex flex-col items-center text-center shadow-sm">
         <span className={`text-[9px] font-extrabold uppercase tracking-widest px-2 py-0.5 rounded-full mb-1 border ${isDemo
-            ? 'bg-blue-50 border-blue-100 text-blue-600'
-            : 'bg-emerald-50 border-emerald-100 text-emerald-600'
+            ? 'bg-blue-800/40 border-blue-600 text-blue-300'
+            : 'bg-emerald-800/30 border-emerald-600 text-emerald-300'
           }`}>
           {isDemo ? 'Demo Mode' : 'Clean Slate'}
         </span>
