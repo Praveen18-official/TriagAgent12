@@ -3,9 +3,9 @@ import re
 import os
 from pydantic import BaseModel, Field
 from typing import Optional
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 
-load_dotenv()
+load_dotenv(find_dotenv())
 
 # Define Pydantic Schema for LLM structured output
 class ClassificationResult(BaseModel):
@@ -95,7 +95,7 @@ def local_mock_classification(title: str, description: str) -> dict:
         "confidence": round(category_confidence, 2)
     }
 
-def classify_ticket(title: str, description: str, api_key: Optional[str] = None, prompt_override: Optional[str] = None) -> dict:
+def classify_ticket(title: str, description: str, api_key: Optional[str] = None, prompt_override: Optional[str] = None, model_name: str = "gemini-1.5-flash") -> dict:
     """
     Orchestrates the support ticket classification.
     Uses LangChain with Gemini if api_key is configured, otherwise uses local mock logic.
@@ -138,7 +138,7 @@ def classify_ticket(title: str, description: str, api_key: Optional[str] = None,
         ])
         
         llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
+            model=model_name,
             google_api_key=active_key,
             temperature=0.1
         )

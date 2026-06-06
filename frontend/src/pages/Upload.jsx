@@ -12,6 +12,8 @@ const Upload = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
+  const [manualJson, setManualJson] = useState('');
+  const [showManualEntry, setShowManualEntry] = useState(false);
   const fileInputRef = useRef(null);
 
   const handleDrag = (e) => {
@@ -37,6 +39,27 @@ const Upload = () => {
   const handleFileChange = async (e) => {
     if (e.target.files && e.target.files[0]) {
       await handleFileParsing(e.target.files[0]);
+    }
+  };
+
+  const handleManualJsonSubmit = async () => {
+    if (!manualJson.trim()) {
+      setError('Please paste valid JSON before testing.');
+      return;
+    }
+    setError('');
+    setSuccess(false);
+    setLoading(true);
+
+    try {
+      const jsonBlob = new Blob([manualJson], { type: 'application/json' });
+      const manualFile = new File([jsonBlob], 'manual_input.json', { type: 'application/json' });
+      await handleFileParsing(manualFile);
+    } catch (err) {
+      console.error(err);
+      setError(err.message || 'Failed to parse manual JSON input.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -203,6 +226,50 @@ const Upload = () => {
             <span>{error}</span>
           </div>
         )}
+
+        <div className="mt-6 border border-slate-200 rounded-3xl bg-slate-50 p-5">
+          <div className="flex items-center justify-between mb-3">
+            <div>
+              <h4 className="font-bold text-slate-850 text-sm">Manual JSON Entry</h4>
+              <p className="text-[10px] text-slate-400">Paste JSON directly and validate it as a structured ticket payload.</p>
+            </div>
+            <button
+              onClick={() => setShowManualEntry(!showManualEntry)}
+              className="text-xs font-bold text-blue-600 hover:text-blue-800"
+            >
+              {showManualEntry ? 'Hide' : 'Show'} Manual Entry
+            </button>
+          </div>
+
+          {showManualEntry && (
+            <div className="space-y-3">
+              <textarea
+                value={manualJson}
+                onChange={(e) => setManualJson(e.target.value)}
+                placeholder='Paste JSON here, for example: [{"ticket_id":"TC-1001","title":"Login issue","description":"User cannot login."}]'
+                rows={8}
+                className="w-full rounded-3xl border border-slate-200 bg-white px-4 py-3 text-xs text-slate-700 placeholder:text-slate-400 focus:border-blue-500 focus:ring-blue-100 focus:outline-none"
+              />
+              <div className="flex flex-wrap gap-3">
+                <button
+                  onClick={handleManualJsonSubmit}
+                  className="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-2xl text-xs font-bold transition-all shadow-sm"
+                >
+                  Validate & Load JSON
+                </button>
+                <button
+                  onClick={() => {
+                    setManualJson('');
+                    setError('');
+                  }}
+                  className="border border-slate-200 bg-white text-slate-700 px-4 py-2 rounded-2xl text-xs font-bold transition-all hover:border-slate-300"
+                >
+                  Clear Input
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
 
         <div className="flex items-center space-x-4 mt-6">
           {!file && (
