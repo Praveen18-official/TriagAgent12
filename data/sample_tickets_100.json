@@ -1,0 +1,702 @@
+[
+  {
+    "ticket_id": "TC-7243",
+    "title": "How do I close my account? (Ref: #1001)",
+    "description": "I am no longer running my website and would like to completely delete my account and purge all stored client information. Contact customer at customer1@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8355",
+    "title": "Add CSV/XLSX export option for audit logs (Ref: #1002)",
+    "description": "We need the ability to export our monthly activity logs and ticket history into a CSV or Excel sheet for security audits. Contact customer at customer2@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8714",
+    "title": "Blank screen on saving user profile details (Ref: #1003)",
+    "description": "I am attempting to update my email address in the profile settings page, but clicking 'Save' results in a white screen of death and the data does not update. Contact customer at customer3@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-1626",
+    "title": "Subscription showing as inactive after successful charge (Ref: #1004)",
+    "description": "My credit card statement shows a successful charge of $99 on June 1st, but when I log in, my plan still says 'Free Trial (Expired)'. Contact customer at customer4@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-1291",
+    "title": "Bulk ticket reassignment functionality (Ref: #1005)",
+    "description": "Currently we have to assign tickets one by one. It would save a lot of time if we could select 50 tickets and reassign them in bulk. Contact customer at customer5@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-9289",
+    "title": "Add custom tags/labels to customer contacts (Ref: #1006)",
+    "description": "We need to tag customers with labels like 'VIP', 'Enterprise', or 'Trial' to prioritize conversations in our queues. Contact customer at customer6@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-2047",
+    "title": "SQL Injection vulnerability in search bar (Ref: #1007)",
+    "description": "Our security scanner flagged the search input field because it does not sanitize single quotes, allowing potential database table manipulation. Contact customer at customer7@example.com.",
+    "category": "Bug",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-5370",
+    "title": "Thank you note to the support representative (Ref: #1008)",
+    "description": "Just wanted to say that Sarah did a fantastic job resolving our billing issue yesterday. The response was fast and helpful! Contact customer at customer8@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-7297",
+    "title": "Auto-renewal failed but credit card is active (Ref: #1009)",
+    "description": "My subscription was cancelled because auto-renewal failed, but my card on file has plenty of funds and doesn't expire until 2029. Contact customer at customer9@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-2548",
+    "title": "Unexpected extra charges on last invoice (Ref: #1010)",
+    "description": "My last invoice shows an extra charge of $15.00 for 'API Add-on' which I never subscribed to. Please audit this billing line item. Contact customer at customer10@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-2741",
+    "title": "Critical: Checkout fails on card payment (Ref: #1011)",
+    "description": "I tried purchasing the subscription, but every time I click 'Pay Now', the screen freezes and returns a processing failure. My card was charged once but order is not placed. Contact customer at customer11@example.com.",
+    "category": "Bug",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-4232",
+    "title": "Request for annual invoice PDF (Ref: #1012)",
+    "description": "I need the PDF invoices for the last 3 billing cycles (March, April, May 2026) for our company tax filings. They are not visible in my dashboard. Contact customer at customer12@example.com.",
+    "category": "Billing",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-7102",
+    "title": "Need Google OAuth / SSO integration (Ref: #1013)",
+    "description": "Our company enforces Google SSO for security. We request Google Workspace login integration so team members don't need separate passwords. Contact customer at customer13@example.com.",
+    "category": "Feature",
+    "priority": "P2 High"
+  },
+  {
+    "ticket_id": "TC-2199",
+    "title": "Form submission returns 500 server error (Ref: #1014)",
+    "description": "Submitting the onboarding form returns a 500 Internal Server Error. Please see if the server logs indicate why database write failed. Contact customer at customer14@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-2163",
+    "title": "Bulk ticket reassignment functionality (Ref: #1015)",
+    "description": "Currently we have to assign tickets one by one. It would save a lot of time if we could select 50 tickets and reassign them in bulk. Contact customer at customer15@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-9018",
+    "title": "Add custom tags/labels to customer contacts (Ref: #1016)",
+    "description": "We need to tag customers with labels like 'VIP', 'Enterprise', or 'Trial' to prioritize conversations in our queues. Contact customer at customer16@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-1474",
+    "title": "Requesting corporate billing discount details (Ref: #1017)",
+    "description": "We are looking to scale our team from 10 to 50 users. Is there a corporate discount available, and can we pay via purchase order/invoice instead of card? Contact customer at customer17@example.com.",
+    "category": "Billing",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-1953",
+    "title": "Thank you note to the support representative (Ref: #1018)",
+    "description": "Just wanted to say that Sarah did a fantastic job resolving our billing issue yesterday. The response was fast and helpful! Contact customer at customer18@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-4879",
+    "title": "Auto-renewal failed but credit card is active (Ref: #1019)",
+    "description": "My subscription was cancelled because auto-renewal failed, but my card on file has plenty of funds and doesn't expire until 2029. Contact customer at customer19@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-4381",
+    "title": "Unexpected extra charges on last invoice (Ref: #1020)",
+    "description": "My last invoice shows an extra charge of $15.00 for 'API Add-on' which I never subscribed to. Please audit this billing line item. Contact customer at customer20@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-5451",
+    "title": "Requesting dark mode support in dashboard (Ref: #1021)",
+    "description": "Working late at night is straining my eyes. It would be amazing to have a toggle to switch the entire application UI to a dark theme. Contact customer at customer21@example.com.",
+    "category": "Feature",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-7941",
+    "title": "General query regarding platform uptime SLA (Ref: #1022)",
+    "description": "Where can we find your Service Level Agreement (SLA) terms regarding service availability, uptime guarantees, and refund eligibility? Contact customer at customer22@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-2849",
+    "title": "Blank screen on saving user profile details (Ref: #1023)",
+    "description": "I am attempting to update my email address in the profile settings page, but clicking 'Save' results in a white screen of death and the data does not update. Contact customer at customer23@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-9148",
+    "title": "Subscription showing as inactive after successful charge (Ref: #1024)",
+    "description": "My credit card statement shows a successful charge of $99 on June 1st, but when I log in, my plan still says 'Free Trial (Expired)'. Contact customer at customer24@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-9162",
+    "title": "Where is your server hosting location? (Ref: #1025)",
+    "description": "To comply with local data regulations (GDPR), we need to confirm whether our data is hosted in the US, EU, or AP region. Contact customer at customer25@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8655",
+    "title": "Unable to reset password - token invalid email link (Ref: #1026)",
+    "description": "The link sent via password reset email says 'Invalid Token' immediately upon clicking. I cannot log in. Contact customer at customer26@example.com.",
+    "category": "Bug",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-5641",
+    "title": "Provide API endpoint to fetch team statistics (Ref: #1027)",
+    "description": "We want to build a custom internal dashboard. Can you expose a public REST API endpoint that returns historical response time metrics? Contact customer at customer27@example.com.",
+    "category": "Feature",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-7476",
+    "title": "Images not uploading in chat window (Ref: #1028)",
+    "description": "Attempting to attach a JPG image (size 1.2MB) to a support chat ticket results in an endless uploading spinner and fails to send. Contact customer at customer28@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8498",
+    "title": "Requesting PDF generation tool for generated charts (Ref: #1029)",
+    "description": "It would be very helpful if we could export the analytics charts on the dashboard as high-quality PDFs for our monthly executive board slides. Contact customer at customer29@example.com.",
+    "category": "Feature",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-4151",
+    "title": "Broken CSS styling on dark mode toggle (Ref: #1030)",
+    "description": "Switching to dark mode makes the table text invisible because the text remains dark grey against the dark background. Contact customer at customer30@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-2851",
+    "title": "Charged twice for the monthly plan (Ref: #1031)",
+    "description": "I was charged $49.00 twice on June 5th for my monthly plan. Please refund the duplicate transaction. Contact customer at customer31@example.com.",
+    "category": "Billing",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-7572",
+    "title": "Request for annual invoice PDF (Ref: #1032)",
+    "description": "I need the PDF invoices for the last 3 billing cycles (March, April, May 2026) for our company tax filings. They are not visible in my dashboard. Contact customer at customer32@example.com.",
+    "category": "Billing",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-4748",
+    "title": "Feedback on the new onboarding tutorial (Ref: #1033)",
+    "description": "The new onboarding flow is a bit confusing. The third tooltip covers the 'Next' button on smaller laptop screen resolutions. Contact customer at customer33@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-5984",
+    "title": "Request for Slack notification webhook integration (Ref: #1034)",
+    "description": "We would love to receive real-time alerts in our engineering Slack channel when a new P1 critical bug is reported in the system. Contact customer at customer34@example.com.",
+    "category": "Feature",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-7602",
+    "title": "API rate limiting triggering incorrectly on standard accounts (Ref: #1035)",
+    "description": "Our integration is blocked because we receive '429 Too Many Requests' after only 5 requests/minute. The documentation says the limit is 100. Contact customer at customer35@example.com.",
+    "category": "Bug",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-3721",
+    "title": "How to change the notification email address? (Ref: #1036)",
+    "description": "I want the alerts to be sent to dev-alerts@ourcompany.com, but my primary account email is admin@ourcompany.com. How do I decouple them? Contact customer at customer36@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-7626",
+    "title": "Partnership proposal inquiry (Ref: #1037)",
+    "description": "I represent a software consultancy and would love to discuss a partnership to integrate your ticket system into our clients' CRMs. Contact customer at customer37@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-4286",
+    "title": "Prorated pricing query for team upgrades (Ref: #1038)",
+    "description": "If I add 5 new seats to my billing plan mid-month, how will the prorated charge be computed on the next invoice? Contact customer at customer38@example.com.",
+    "category": "Billing",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-4878",
+    "title": "Auto-renewal failed but credit card is active (Ref: #1039)",
+    "description": "My subscription was cancelled because auto-renewal failed, but my card on file has plenty of funds and doesn't expire until 2029. Contact customer at customer39@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8892",
+    "title": "Question about API rate limits for free tier (Ref: #1040)",
+    "description": "I am looking at your public documentation but couldn't find the exact limit for the free tier API. What is the daily request cap? Contact customer at customer40@example.com.",
+    "category": "Other",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-6029",
+    "title": "Requesting dark mode support in dashboard (Ref: #1041)",
+    "description": "Working late at night is straining my eyes. It would be amazing to have a toggle to switch the entire application UI to a dark theme. Contact customer at customer41@example.com.",
+    "category": "Feature",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-3050",
+    "title": "Request for annual invoice PDF (Ref: #1042)",
+    "description": "I need the PDF invoices for the last 3 billing cycles (March, April, May 2026) for our company tax filings. They are not visible in my dashboard. Contact customer at customer42@example.com.",
+    "category": "Billing",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-1415",
+    "title": "Blank screen on saving user profile details (Ref: #1043)",
+    "description": "I am attempting to update my email address in the profile settings page, but clicking 'Save' results in a white screen of death and the data does not update. Contact customer at customer43@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-5990",
+    "title": "Request for Slack notification webhook integration (Ref: #1044)",
+    "description": "We would love to receive real-time alerts in our engineering Slack channel when a new P1 critical bug is reported in the system. Contact customer at customer44@example.com.",
+    "category": "Feature",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-6674",
+    "title": "Failed to update credit card details (Ref: #1045)",
+    "description": "I am trying to update our company card on file to a corporate Mastercard, but the payment gateway returns 'Invalid Merchant Configuration'. Contact customer at customer45@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-3912",
+    "title": "Add custom tags/labels to customer contacts (Ref: #1046)",
+    "description": "We need to tag customers with labels like 'VIP', 'Enterprise', or 'Trial' to prioritize conversations in our queues. Contact customer at customer46@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-2803",
+    "title": "SQL Injection vulnerability in search bar (Ref: #1047)",
+    "description": "Our security scanner flagged the search input field because it does not sanitize single quotes, allowing potential database table manipulation. Contact customer at customer47@example.com.",
+    "category": "Bug",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-2805",
+    "title": "Add multi-factor authentication (MFA/2FA) support (Ref: #1048)",
+    "description": "To comply with security audits, our team must enable 2FA via authenticator apps (like Google Authenticator or Duo). Please implement this. Contact customer at customer48@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-1809",
+    "title": "Inquiry about supported browsers (Ref: #1049)",
+    "description": "Do you officially support Safari 15? Some of our agents are seeing layout displacement when viewing the conversation details. Contact customer at customer49@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-4197",
+    "title": "Ability to schedule automated reports emails (Ref: #1050)",
+    "description": "We would like to automatically email a weekly PDF summary of open tickets to our support managers every Monday morning. Contact customer at customer50@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-3030",
+    "title": "Critical: Checkout fails on card payment (Ref: #1051)",
+    "description": "I tried purchasing the subscription, but every time I click 'Pay Now', the screen freezes and returns a processing failure. My card was charged once but order is not placed. Contact customer at customer51@example.com.",
+    "category": "Bug",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-2838",
+    "title": "Request for annual invoice PDF (Ref: #1052)",
+    "description": "I need the PDF invoices for the last 3 billing cycles (March, April, May 2026) for our company tax filings. They are not visible in my dashboard. Contact customer at customer52@example.com.",
+    "category": "Billing",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-4030",
+    "title": "Need Google OAuth / SSO integration (Ref: #1053)",
+    "description": "Our company enforces Google SSO for security. We request Google Workspace login integration so team members don't need separate passwords. Contact customer at customer53@example.com.",
+    "category": "Feature",
+    "priority": "P2 High"
+  },
+  {
+    "ticket_id": "TC-8080",
+    "title": "Request for Slack notification webhook integration (Ref: #1054)",
+    "description": "We would love to receive real-time alerts in our engineering Slack channel when a new P1 critical bug is reported in the system. Contact customer at customer54@example.com.",
+    "category": "Feature",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-6512",
+    "title": "Failed to update credit card details (Ref: #1055)",
+    "description": "I am trying to update our company card on file to a corporate Mastercard, but the payment gateway returns 'Invalid Merchant Configuration'. Contact customer at customer55@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-9046",
+    "title": "Unable to reset password - token invalid email link (Ref: #1056)",
+    "description": "The link sent via password reset email says 'Invalid Token' immediately upon clicking. I cannot log in. Contact customer at customer56@example.com.",
+    "category": "Bug",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-2201",
+    "title": "Partnership proposal inquiry (Ref: #1057)",
+    "description": "I represent a software consultancy and would love to discuss a partnership to integrate your ticket system into our clients' CRMs. Contact customer at customer57@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8102",
+    "title": "Add multi-factor authentication (MFA/2FA) support (Ref: #1058)",
+    "description": "To comply with security audits, our team must enable 2FA via authenticator apps (like Google Authenticator or Duo). Please implement this. Contact customer at customer58@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-6633",
+    "title": "Session terminates every 5 minutes (Ref: #1059)",
+    "description": "My login session keeps expiring every 5 minutes even when I am active in the dashboard. I have to log back in repeatedly. Contact customer at customer59@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-9840",
+    "title": "Ability to schedule automated reports emails (Ref: #1060)",
+    "description": "We would like to automatically email a weekly PDF summary of open tickets to our support managers every Monday morning. Contact customer at customer60@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-3187",
+    "title": "How do I close my account? (Ref: #1061)",
+    "description": "I am no longer running my website and would like to completely delete my account and purge all stored client information. Contact customer at customer61@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-9326",
+    "title": "General query regarding platform uptime SLA (Ref: #1062)",
+    "description": "Where can we find your Service Level Agreement (SLA) terms regarding service availability, uptime guarantees, and refund eligibility? Contact customer at customer62@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-1744",
+    "title": "Need refund for accidental renewal (Ref: #1063)",
+    "description": "My account auto-renewed for another year today, but I intended to cancel. Can I please get a refund as I haven't used the service this month? Contact customer at customer63@example.com.",
+    "category": "Billing",
+    "priority": "P2 High"
+  },
+  {
+    "ticket_id": "TC-9346",
+    "title": "Subscription showing as inactive after successful charge (Ref: #1064)",
+    "description": "My credit card statement shows a successful charge of $99 on June 1st, but when I log in, my plan still says 'Free Trial (Expired)'. Contact customer at customer64@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-2517",
+    "title": "Where is your server hosting location? (Ref: #1065)",
+    "description": "To comply with local data regulations (GDPR), we need to confirm whether our data is hosted in the US, EU, or AP region. Contact customer at customer65@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-6431",
+    "title": "How to change the notification email address? (Ref: #1066)",
+    "description": "I want the alerts to be sent to dev-alerts@ourcompany.com, but my primary account email is admin@ourcompany.com. How do I decouple them? Contact customer at customer66@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-5585",
+    "title": "SQL Injection vulnerability in search bar (Ref: #1067)",
+    "description": "Our security scanner flagged the search input field because it does not sanitize single quotes, allowing potential database table manipulation. Contact customer at customer67@example.com.",
+    "category": "Bug",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-2429",
+    "title": "Images not uploading in chat window (Ref: #1068)",
+    "description": "Attempting to attach a JPG image (size 1.2MB) to a support chat ticket results in an endless uploading spinner and fails to send. Contact customer at customer68@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-9382",
+    "title": "Auto-renewal failed but credit card is active (Ref: #1069)",
+    "description": "My subscription was cancelled because auto-renewal failed, but my card on file has plenty of funds and doesn't expire until 2029. Contact customer at customer69@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8407",
+    "title": "Question about API rate limits for free tier (Ref: #1070)",
+    "description": "I am looking at your public documentation but couldn't find the exact limit for the free tier API. What is the daily request cap? Contact customer at customer70@example.com.",
+    "category": "Other",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-8159",
+    "title": "Charged twice for the monthly plan (Ref: #1071)",
+    "description": "I was charged $49.00 twice on June 5th for my monthly plan. Please refund the duplicate transaction. Contact customer at customer71@example.com.",
+    "category": "Billing",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-8854",
+    "title": "App crashes on mobile dashboard load (Ref: #1072)",
+    "description": "Whenever I open the app on my Android device and click on 'View Analytics', the entire app crashes back to the home screen. Contact customer at customer72@example.com.",
+    "category": "Bug",
+    "priority": "P2 High"
+  },
+  {
+    "ticket_id": "TC-4044",
+    "title": "Need refund for accidental renewal (Ref: #1073)",
+    "description": "My account auto-renewed for another year today, but I intended to cancel. Can I please get a refund as I haven't used the service this month? Contact customer at customer73@example.com.",
+    "category": "Billing",
+    "priority": "P2 High"
+  },
+  {
+    "ticket_id": "TC-7657",
+    "title": "Spam: Earn $5000/day from home advertisement (Ref: #1074)",
+    "description": "Make money fast! Click this link to claim your cash reward. Absolutely free registration, no credit card required. Contact customer at customer74@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8621",
+    "title": "Bulk ticket reassignment functionality (Ref: #1075)",
+    "description": "Currently we have to assign tickets one by one. It would save a lot of time if we could select 50 tickets and reassign them in bulk. Contact customer at customer75@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-9783",
+    "title": "How to change the notification email address? (Ref: #1076)",
+    "description": "I want the alerts to be sent to dev-alerts@ourcompany.com, but my primary account email is admin@ourcompany.com. How do I decouple them? Contact customer at customer76@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-5559",
+    "title": "Partnership proposal inquiry (Ref: #1077)",
+    "description": "I represent a software consultancy and would love to discuss a partnership to integrate your ticket system into our clients' CRMs. Contact customer at customer77@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-7070",
+    "title": "Thank you note to the support representative (Ref: #1078)",
+    "description": "Just wanted to say that Sarah did a fantastic job resolving our billing issue yesterday. The response was fast and helpful! Contact customer at customer78@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-4927",
+    "title": "Auto-renewal failed but credit card is active (Ref: #1079)",
+    "description": "My subscription was cancelled because auto-renewal failed, but my card on file has plenty of funds and doesn't expire until 2029. Contact customer at customer79@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-1081",
+    "title": "Ability to schedule automated reports emails (Ref: #1080)",
+    "description": "We would like to automatically email a weekly PDF summary of open tickets to our support managers every Monday morning. Contact customer at customer80@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-3832",
+    "title": "Critical: Checkout fails on card payment (Ref: #1081)",
+    "description": "I tried purchasing the subscription, but every time I click 'Pay Now', the screen freezes and returns a processing failure. My card was charged once but order is not placed. Contact customer at customer81@example.com.",
+    "category": "Bug",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-1718",
+    "title": "General query regarding platform uptime SLA (Ref: #1082)",
+    "description": "Where can we find your Service Level Agreement (SLA) terms regarding service availability, uptime guarantees, and refund eligibility? Contact customer at customer82@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-3515",
+    "title": "Blank screen on saving user profile details (Ref: #1083)",
+    "description": "I am attempting to update my email address in the profile settings page, but clicking 'Save' results in a white screen of death and the data does not update. Contact customer at customer83@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-6243",
+    "title": "Spam: Earn $5000/day from home advertisement (Ref: #1084)",
+    "description": "Make money fast! Click this link to claim your cash reward. Absolutely free registration, no credit card required. Contact customer at customer84@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-3463",
+    "title": "Bulk ticket reassignment functionality (Ref: #1085)",
+    "description": "Currently we have to assign tickets one by one. It would save a lot of time if we could select 50 tickets and reassign them in bulk. Contact customer at customer85@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8431",
+    "title": "Charge disputed by bank - account suspended (Ref: #1086)",
+    "description": "My account was suspended today due to a chargeback dispute. I believe this was an error from our finance department. Please help reactivate. Contact customer at customer86@example.com.",
+    "category": "Billing",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-2453",
+    "title": "Partnership proposal inquiry (Ref: #1087)",
+    "description": "I represent a software consultancy and would love to discuss a partnership to integrate your ticket system into our clients' CRMs. Contact customer at customer87@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8959",
+    "title": "Add multi-factor authentication (MFA/2FA) support (Ref: #1088)",
+    "description": "To comply with security audits, our team must enable 2FA via authenticator apps (like Google Authenticator or Duo). Please implement this. Contact customer at customer88@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-5560",
+    "title": "Inquiry about supported browsers (Ref: #1089)",
+    "description": "Do you officially support Safari 15? Some of our agents are seeing layout displacement when viewing the conversation details. Contact customer at customer89@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-2370",
+    "title": "Broken CSS styling on dark mode toggle (Ref: #1090)",
+    "description": "Switching to dark mode makes the table text invisible because the text remains dark grey against the dark background. Contact customer at customer90@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-6733",
+    "title": "Requesting dark mode support in dashboard (Ref: #1091)",
+    "description": "Working late at night is straining my eyes. It would be amazing to have a toggle to switch the entire application UI to a dark theme. Contact customer at customer91@example.com.",
+    "category": "Feature",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-6384",
+    "title": "Request for annual invoice PDF (Ref: #1092)",
+    "description": "I need the PDF invoices for the last 3 billing cycles (March, April, May 2026) for our company tax filings. They are not visible in my dashboard. Contact customer at customer92@example.com.",
+    "category": "Billing",
+    "priority": "P3 Medium"
+  },
+  {
+    "ticket_id": "TC-2645",
+    "title": "Feedback on the new onboarding tutorial (Ref: #1093)",
+    "description": "The new onboarding flow is a bit confusing. The third tooltip covers the 'Next' button on smaller laptop screen resolutions. Contact customer at customer93@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-6538",
+    "title": "Subscription showing as inactive after successful charge (Ref: #1094)",
+    "description": "My credit card statement shows a successful charge of $99 on June 1st, but when I log in, my plan still says 'Free Trial (Expired)'. Contact customer at customer94@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-4257",
+    "title": "Failed to update credit card details (Ref: #1095)",
+    "description": "I am trying to update our company card on file to a corporate Mastercard, but the payment gateway returns 'Invalid Merchant Configuration'. Contact customer at customer95@example.com.",
+    "category": "Billing",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-4366",
+    "title": "Charge disputed by bank - account suspended (Ref: #1096)",
+    "description": "My account was suspended today due to a chargeback dispute. I believe this was an error from our finance department. Please help reactivate. Contact customer at customer96@example.com.",
+    "category": "Billing",
+    "priority": "P1 Critical"
+  },
+  {
+    "ticket_id": "TC-6411",
+    "title": "Partnership proposal inquiry (Ref: #1097)",
+    "description": "I represent a software consultancy and would love to discuss a partnership to integrate your ticket system into our clients' CRMs. Contact customer at customer97@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-6904",
+    "title": "Add multi-factor authentication (MFA/2FA) support (Ref: #1098)",
+    "description": "To comply with security audits, our team must enable 2FA via authenticator apps (like Google Authenticator or Duo). Please implement this. Contact customer at customer98@example.com.",
+    "category": "Feature",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-5273",
+    "title": "Inquiry about supported browsers (Ref: #1099)",
+    "description": "Do you officially support Safari 15? Some of our agents are seeing layout displacement when viewing the conversation details. Contact customer at customer99@example.com.",
+    "category": "Other",
+    "priority": "P4 Low"
+  },
+  {
+    "ticket_id": "TC-8365",
+    "title": "Broken CSS styling on dark mode toggle (Ref: #1100)",
+    "description": "Switching to dark mode makes the table text invisible because the text remains dark grey against the dark background. Contact customer at customer100@example.com.",
+    "category": "Bug",
+    "priority": "P4 Low"
+  }
+]

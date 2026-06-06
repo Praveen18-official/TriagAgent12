@@ -1,0 +1,18 @@
+# Python
+backend/venv/
+backend/__pycache__/
+backend/**/*.pyc
+backend/tickets.db
+backend/*.db
+
+# Node/React
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+
+# Logs and OS files
+*.log
+.DS_Store
+.idea/
+.vscode/
