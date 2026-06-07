@@ -1,0 +1,27 @@
+[
+  {
+    "ticket_id": "TC-1001",
+    "title": "App crashes when saving profile",
+    "description": "When I update my profile information and click Save, the app crashes and returns to the login screen. I lose my changes every time."
+  },
+  {
+    "ticket_id": "TC-1002",
+    "title": "Duplicate billing charge on monthly invoice",
+    "description": "I have been charged twice for the same monthly subscription this week. Please review and refund the duplicate transaction."
+  },
+  {
+    "ticket_id": "TC-1003",
+    "title": "Add dark mode to dashboard",
+    "description": "Please add a dark theme option so the dashboard is easier to use at night. The current UI is too bright for evening work."
+  },
+  {
+    "ticket_id": "TC-1004",
+    "title": "How do I delete my account?",
+    "description": "I want to permanently close my account and remove all stored data. Please explain the steps and any data retention policy."
+  },
+  {
+    "ticket_id": "TC-1005",
+    "title": "API request limit exceeded too quickly",
+    "description": "Our integration hits the API limit after only a few requests even though we are on the standard plan. Please check the rate limit settings."
+  }
+]

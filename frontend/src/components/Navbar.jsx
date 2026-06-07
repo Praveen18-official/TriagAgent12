@@ -32,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="h-20 bg-slate-800 border-b border-slate-700 flex items-center justify-between px-8 sticky top-0 z-10 animate-fade-in-down">
+    <header className="h-20 bg-slate-800 border-b border-slate-700 flex flex-col md:flex-row md:items-center justify-between px-4 md:px-8 sticky top-0 z-10 animate-fade-in-down gap-3 md:gap-0">
 
       {/* Title */}
       <div>
@@ -45,7 +45,7 @@ const Navbar = () => {
       </div>
 
       {/* Actions */}
-      <div className="flex items-center space-x-4">
+      <div className="flex flex-wrap items-center gap-3 md:gap-4">
 
         {/* Workspace indicator tag */}
         <span className={`text-[10px] font-bold px-3 py-1 rounded-full border ${isDemo

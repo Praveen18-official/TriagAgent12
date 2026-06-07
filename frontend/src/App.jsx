@@ -39,16 +39,16 @@ const AppContent = () => {
 
   return (
     <ProtectedRoute>
-      <div className="min-h-screen bg-slate-50 text-slate-800 flex">
+      <div className="min-h-screen bg-slate-50 text-slate-800 flex min-w-0">
         {/* Navigation Sidebar */}
         <Sidebar />
 
         {/* Core Layout Window */}
-        <div className="flex-1 pl-64 flex flex-col min-h-screen">
+        <div className="flex-1 pl-0 md:pl-64 lg:pl-72 flex flex-col min-h-screen">
           <Navbar />
           
           {/* Dashboard Content Panel */}
-          <main className="flex-1 p-8 overflow-y-auto">
+          <main className="flex-1 p-4 md:p-8 overflow-y-auto">
             <Routes>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/upload" element={<Upload />} />

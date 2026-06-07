@@ -17,7 +17,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className="w-64 bg-slate-900 text-slate-200 flex flex-col h-screen fixed left-0 top-0 border-r border-slate-800 z-20 animate-fade-in">
+    <aside className="w-64 md:w-72 bg-slate-900 text-slate-200 flex flex-col h-screen fixed left-0 top-0 border-r border-slate-800 z-20 animate-fade-in">
 
       {/* Brand Logo Link to Landing page */}
       <Link to="/" className="p-6 border-b border-slate-800/60 flex items-center space-x-3 bg-transparent hover:bg-slate-800/60 transition-colors">

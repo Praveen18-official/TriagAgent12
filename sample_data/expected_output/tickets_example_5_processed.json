@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "ticket_id": "TC-1001",
+    "title": "App crashes when saving profile",
+    "description": "When I update my profile information and click Save, the app crashes and returns to the login screen. I lose my changes every time.",
+    "category": "Bug",
+    "priority": "P1 Critical",
+    "reasoning": "The ticket describes an application crash while saving profile data, indicating a functional failure rather than a billing or feature request.",
+    "confidence": 0.92,
+    "processing_time": 0.35,
+    "created_at": "2026-06-07T12:00:00Z"
+  },
+  {
+    "id": 2,
+    "ticket_id": "TC-1002",
+    "title": "Duplicate billing charge on monthly invoice",
+    "description": "I have been charged twice for the same monthly subscription this week. Please review and refund the duplicate transaction.",
+    "category": "Billing",
+    "priority": "P2 High",
+    "reasoning": "The user reports duplicate charges on a subscription invoice, which is a billing issue rather than a technical bug or feature request.",
+    "confidence": 0.89,
+    "processing_time": 0.28,
+    "created_at": "2026-06-07T12:00:15Z"
+  },
+  {
+    "id": 3,
+    "ticket_id": "TC-1003",
+    "title": "Add dark mode to dashboard",
+    "description": "Please add a dark theme option so the dashboard is easier to use at night. The current UI is too bright for evening work.",
+    "category": "Feature",
+    "priority": "P3 Medium",
+    "reasoning": "This is a request to add a new UI/theme capability, so it matches a feature enhancement category.",
+    "confidence": 0.88,
+    "processing_time": 0.22,
+    "created_at": "2026-06-07T12:00:30Z"
+  },
+  {
+    "id": 4,
+    "ticket_id": "TC-1004",
+    "title": "How do I delete my account?",
+    "description": "I want to permanently close my account and remove all stored data. Please explain the steps and any data retention policy.",
+    "category": "Other",
+    "priority": "P4 Low",
+    "reasoning": "The request is informational and administrative rather than a bug, billing issue, or feature request.",
+    "confidence": 0.85,
+    "processing_time": 0.20,
+    "created_at": "2026-06-07T12:00:45Z"
+  },
+  {
+    "id": 5,
+    "ticket_id": "TC-1005",
+    "title": "API request limit exceeded too quickly",
+    "description": "Our integration hits the API limit after only a few requests even though we are on the standard plan. Please check the rate limit settings.",
+    "category": "Bug",
+    "priority": "P2 High",
+    "reasoning": "The issue describes an API limit being reached unexpectedly, which is likely a system behavior or bug affecting normal integration flows.",
+    "confidence": 0.90,
+    "processing_time": 0.31,
+    "created_at": "2026-06-07T12:01:00Z"
+  }
+]

@@ -82,17 +82,17 @@ const Login = () => {
   };
 
   return (
-    <div className="auth-root login-root bg-slate-900 text-slate-100 min-h-screen flex items-center justify-center relative px-6 overflow-hidden selection:bg-slate-700 selection:text-slate-100">
+    <div className="auth-root login-root bg-slate-900 text-slate-100 min-h-screen flex items-center justify-center relative px-4 sm:px-6 lg:px-8 overflow-hidden selection:bg-slate-700 selection:text-slate-100">
       
       {/* Background blobs */}
-      <div className="absolute top-1/4 left-1/3 w-[300px] h-[300px] bg-blue-500/5 rounded-full blur-[80px] pointer-events-none"></div>
-      <div className="absolute bottom-1/4 right-1/3 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[80px] pointer-events-none"></div>
+      <div className="absolute top-1/4 left-1/4 md:left-1/3 w-[300px] h-[300px] bg-blue-500/5 rounded-full blur-[80px] pointer-events-none"></div>
+      <div className="absolute bottom-1/4 right-1/4 md:right-1/3 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[80px] pointer-events-none"></div>
 
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="w-full max-w-md card-dark border border-slate-600 p-8 rounded-3xl shadow-xl relative"
+        className="w-full max-w-md sm:max-w-lg lg:max-w-xl card-dark border border-slate-600 p-8 rounded-3xl shadow-xl relative"
       >
         {/* Brand Header */}
         <div className="flex flex-col items-center mb-6 text-center">

@@ -23,9 +23,9 @@ const Landing = () => {
   ];
 
   const team = [
-    { name: 'Praveen Kumar', role: 'Full Stack & AI Architect', initial: 'PK' },
-    { name: 'Aditya Raj', role: 'Lead UI/UX Developer', initial: 'AR' },
-    { name: 'Sneha Sharma', role: 'Systems QA Engineer', initial: 'SS' }
+    { name: 'Praveen', role: 'Full Stack & AI Architect', initial: 'P' },
+    { name: 'Pranesh', role: 'Lead UI/UX Developer', initial: 'P' },
+    { name: 'Prasanna', role: 'Systems QA Engineer', initial: 'P' }
   ];
 
   const handleStart = (userType) => {
@@ -41,7 +41,7 @@ const Landing = () => {
       <div className="h-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600"></div>
 
       {/* Header Bar */}
-      <header className="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center border-b border-slate-700 bg-slate-800/70 backdrop-blur-md sticky top-0 z-50 animate-fade-in">
+      <header className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col lg:flex-row justify-between items-center border-b border-slate-700 bg-slate-800/70 backdrop-blur-md sticky top-0 z-50 animate-fade-in gap-4 lg:gap-0">
         <div className="flex items-center space-x-3">
           <div className="bg-blue-600 p-2.5 rounded-xl flex items-center justify-center text-white shadow-md shadow-blue-500/10">
             <FiCpu className="w-5 h-5" />
@@ -69,7 +69,7 @@ const Landing = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="max-w-7xl mx-auto px-8 pt-16 pb-20 text-center relative">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 text-center relative">
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -104,7 +104,7 @@ const Landing = () => {
       {/* Preview removed per request */}
 
       {/* Platform Workflow Section */}
-      <section className="max-w-7xl mx-auto px-8 py-20 border-t border-slate-700">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-700">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-slate-100 tracking-tight">System Workflow Pipelines</h2>
           <p className="text-slate-300 mt-2 text-sm max-w-lg mx-auto">
@@ -112,7 +112,7 @@ const Landing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((s, idx) => (
             <div key={idx} className="card-dark border border-slate-700/60 p-6 rounded-3xl relative overflow-hidden text-left">
               <span className="text-3xl font-black text-slate-400 absolute -top-0 right-4 select-none">
@@ -126,7 +126,7 @@ const Landing = () => {
       </section>
 
       {/* Features Grid */}
-      <section className="max-w-7xl mx-auto px-8 py-20 border-t border-slate-700">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-700">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-slate-100 tracking-tight">Core Platform Capabilities</h2>
           <p className="text-slate-300 mt-2 text-sm max-w-lg mx-auto">
@@ -134,7 +134,7 @@ const Landing = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((f, idx) => (
             <div
               key={idx}
@@ -151,7 +151,7 @@ const Landing = () => {
       </section>
 
       {/* Team Section */}
-      <section className="max-w-7xl mx-auto px-8 py-20 border-t border-slate-700">
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-700">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-extrabold text-slate-100 tracking-tight">Project Development Team</h2>
           <p className="text-slate-300 mt-2 text-sm max-w-lg mx-auto">
@@ -176,7 +176,7 @@ const Landing = () => {
 
       {/* Footer */}
       <footer className="border-t border-slate-700 bg-transparent py-10 text-slate-300 text-xs text-center">
-        <div className="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <span className="font-bold text-slate-100">TriageAgent Platform</span>
           <div className="flex space-x-6">
             <a href="#github" className="hover:text-slate-100/80">GitHub</a>
