@@ -129,6 +129,6 @@ graph TD
 ---
 
 ## 6. Project Engineering Team
-- **Praveen Kumar** — Full Stack Lead & AI Orchestration
-- **Aditya Raj** — Frontend Systems & UI/UX Styling
-- **Sneha Sharma** — QA Test Engineering & Database Management
+- **Pranesh Kumar N**
+- **Praveen GK**
+- **Prasanna**
