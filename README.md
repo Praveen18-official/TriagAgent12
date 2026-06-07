@@ -3,21 +3,21 @@
 
 👥 Team Information
 
-Team Name
+Team Name 
 
-TrioNova
+    TrioNova
 
-Team Number
+Team Number 
 
-Team 21
+    Team 21
 
-Team Members
+Team Members 
 
-Praveen G K
+    Praveen G K
 
-Pranesh Kumar N
+    Pranesh Kumar N
 
-Prasanna Kumar H
+    Prasanna Kumar H
 
 🌐 Deliverable Links
 
