@@ -1,6 +1,32 @@
 
 # 🚀 AI Support Ticket Triage Agent Platform
 
+👥 Team Information
+
+Team Name
+
+TrioNova
+
+Team Number
+
+Team 21
+
+Team Members
+
+Praveen G K
+Pranesh Kumar N
+Prasanna Kumar H
+
+🌐 Deliverable Links
+
+Deployed Links:
+
+Demo Video
+https://www.loom.com/share/2e92e65c6a8943a9b222c029ee411a7b
+
+GitHub Repository
+https://github.com/Praveen18-official/TriagAgent12
+
 ## 📌 Overview
 
 The **AI Support Ticket Triage Agent Platform** is a web-based application that automates customer support ticket classification and prioritization using Artificial Intelligence.
