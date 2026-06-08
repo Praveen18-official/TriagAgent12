@@ -115,25 +115,263 @@ The AI Support Ticket Triage Agent Platform addresses these challenges by automa
 
 # ⚙️ System Architecture
 
-Ticket Submission
+# ⚙️ Detailed System Architecture
+
+## High-Level Architecture
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│                        End Users                            │
+│               (Support Agents / Admins)                    │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+                        ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    React Frontend                           │
+│                                                             │
+│  • Dashboard                                                │
+│  • Ticket Submission Form                                   │
+│  • Ticket List & Search                                     │
+│  • Analytics Dashboard                                      │
+│  • Real-Time Updates                                        │
+│  • AI Chat Assistant (Optional)                             │
+│                                                             │
+│ Technologies: React.js, Vite, Tailwind CSS, Axios           │
+└───────────────────────┬─────────────────────────────────────┘
+                        │
+                        │ HTTP / REST API
+                        │ WebSocket Connection
+                        ▼
+┌─────────────────────────────────────────────────────────────┐
+│                    FastAPI Backend                          │
+│                                                             │
+│  API Layer                                                  │
+│  ├── GET /health                                            │
+│  ├── GET /tickets                                           │
+│  ├── POST /tickets                                          │
+│  ├── POST /triage                                           │
+│  ├── GET /analytics                                         │
+│  └── WebSocket Endpoint                                     │
+│                                                             │
+│  Business Logic Layer                                       │
+│  ├── Ticket Processing                                      │
+│  ├── Category Assignment                                    │
+│  ├── Priority Assignment                                    │
+│  ├── Validation Engine                                      │
+│  ├── Analytics Service                                      │
+│  └── Notification Service                                   │
+└───────────────┬───────────────────┬─────────────────────────┘
+                │                   │
+                │                   │
+                ▼                   ▼
+
+┌───────────────────────┐    ┌─────────────────────────────┐
+│    SQLite Database    │    │      AI Classification      │
+│                       │    │          Engine             │
+│ • Tickets             │    │                             │
+│ • Categories          │    │ • Gemini Integration        │
+│ • Priorities          │    │ • LangChain Processing      │
+│ • Reasoning Logs      │    │ • Prompt Engineering        │
+│ • Analytics Data      │    │ • JSON Validation           │
+│ • Audit Records       │    │ • Reasoning Generation      │
+└───────────────────────┘    └──────────────┬──────────────┘
+                                             │
+                                             ▼
+
+                           ┌─────────────────────────────┐
+                           │      Google Gemini API      │
+                           │                             │
+                           │ • Ticket Understanding      │
+                           │ • Classification            │
+                           │ • Priority Determination    │
+                           │ • Reasoning Generation      │
+                           └─────────────────────────────┘
+```
+
+---
+
+# 🔄 Ticket Processing Workflow
+
+```text
+Customer Support Ticket
+            │
+            ▼
+┌─────────────────────────┐
+│ Ticket Submission UI    │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ FastAPI Endpoint        │
+│ POST /triage            │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Input Validation        │
+│ Pydantic Schemas        │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Prompt Construction     │
+│ & Context Preparation   │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Google Gemini Model     │
+│ Analysis                │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Category Detection      │
+│ Bug / Feature / Billing │
+│ / Other                 │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Priority Assignment     │
+│ P1 / P2 / P3 / P4       │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Reasoning Generation    │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ JSON Validation         │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Store in SQLite         │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Return Result to UI     │
+└─────────────────────────┘
+```
+
+---
+
+# 🧠 AI Classification Architecture
+
+```text
+                 Support Ticket
+                        │
+                        ▼
+
+        ┌──────────────────────────────┐
+        │ Prompt Engineering Layer     │
+        └──────────────┬───────────────┘
+                       │
+                       ▼
+
+        ┌──────────────────────────────┐
+        │ Gemini Large Language Model  │
+        └──────────────┬───────────────┘
+                       │
+         ┌─────────────┼─────────────┐
+         │             │             │
+         ▼             ▼             ▼
+
+ ┌────────────┐ ┌────────────┐ ┌────────────┐
+ │ Category   │ │ Priority   │ │ Reasoning  │
+ │ Detection  │ │ Detection  │ │ Generation │
+ └─────┬──────┘ └─────┬──────┘ └─────┬──────┘
+       │              │              │
+       └──────┬───────┴───────┬──────┘
+              │               │
+              ▼
+
+      ┌────────────────────┐
+      │ Structured JSON    │
+      │ Response Builder   │
+      └────────────────────┘
+```
+
+---
+
+# 🗄️ Database Architecture
+
+```text
+tickets
 │
-▼
-AI Processing Engine
+├── id
+├── title
+├── description
+├── category
+├── priority
+├── reasoning
+├── created_at
+└── status
+
+analytics
 │
-▼
-Category Classification
+├── id
+├── total_tickets
+├── bug_count
+├── billing_count
+├── feature_count
+├── other_count
+└── generated_at
+
+audit_logs
 │
-▼
-Priority Determination
-│
-▼
-Reasoning Generation
-│
-▼
-Database Storage
-│
-▼
-Dashboard Visualization
+├── id
+├── ticket_id
+├── action
+├── timestamp
+└── user
+```
+
+---
+
+# 🔥 Key Architectural Features
+
+### Frontend Layer
+
+* Modern React Dashboard
+* Responsive Design
+* Real-Time Updates
+* Analytics Visualization
+
+### Backend Layer
+
+* FastAPI REST APIs
+* WebSocket Communication
+* Validation & Error Handling
+* Business Logic Processing
+
+### AI Layer
+
+* Google Gemini Integration
+* Prompt Engineering
+* Structured JSON Output
+* Explainable Reasoning
+
+### Database Layer
+
+* SQLite Persistence
+* Ticket Storage
+* Audit Logging
+* Analytics Tracking
+
+### Quality Layer
+
+* Pytest Testing
+* API Validation
+* Response Verification
+* Error Monitoring
+
+```
+```
 
 ---
 
